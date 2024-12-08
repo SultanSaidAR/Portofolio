@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryTextColor: #5f8064; 
+    --secondaryTextColor: #000; 
+  
+    --borderColor: #000;
+    --lineColor: #000; 
+  
+    --primaryBackgroundColor: #eff2ef;
+    --secondaryBackgroundColor:  #c2cdc2;
+    --thirdBackgroundColor: #f5f3fe;
+  
+    --primaryIconColor: #5f8064;
+    --primaryIconColorHover: #c2cdc2;
+  
+    --sectionPadding: 6rem 0;
+  
+    --itemBorderRadius: 0.7rem;
+    --hover:rgba(0, 0, 0, 0.3) 0px 3px 5px;
+}
+
+html{
+    scroll-behavior: smooth ;
+    overflow-x: hidden;
+}
+body{
+    font-family: Megrim, Roboto;
+    background-color: var(--bgcolor);
+
+}
+
+.background{
+    background-color: #1f1b1b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed; /* Navbar tetap di tempat saat halaman digulir */
+    top: 25%; /* Menempel di bagian atas layar */
+    bottom: 25%;
+    left: 0; /* Menempel di tepi kiri layar */
+    border-radius: var(--itemBorderRadius);
+    width: 10%; /* Lebar navbar, sesuaikan dengan kebutuhan */
+    display: flex; /* Jika ingin mengatur item dalam flexbox */
+    flex-direction: column; /* Agar item tersusun vertikal */
+    z-index: 999; /* Memastikan navbar ada di atas elemen lain */
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav ul li{
+    display: flex;
+    margin: 2rem;
+}
+nav ul li a{
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s ease-in-out;
+    padding: 0.5rem;
+    border-radius: var(--itemBorderRadius);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px;
+    background-color: #eff2ef;
+    transform: translateX(1rem);
+    transition: 0.3s ease-in-out;
+    color:#1f1b1b;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+}
+
+/* Kontainer utama */
+#hero {
+    display: flex;
+    flex-direction: column; /* Membagi halaman secara vertikal */
+    height: 100vh; /* Tinggi penuh layar */
+    width: 100%; /* Lebar penuh layar */
+    overflow: hidden; /* Sembunyikan elemen keluar */
+}
+
+/* Bagian atas */
+.top-section {
+    flex: 3; /* 30% tinggi */
+    display: flex;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    
+}
+
+.tagline {
+    text-align: center; /* Teks di tengah */
+    color: white
+}
+
+.tagline h1 {
+    font-size: 6rem; /* Ukuran judul */
+    margin: 0;
+}
+
+.tagline p {
+    font-size: 3rem; /* Ukuran teks deskripsi */
+    margin: 0;
+}
+
+/* Bagian bawah */
+.bottom-section {
+    flex: 7; /* 70% tinggi */
+    position: relative; /* Kontainer untuk elemen absolut */
+    display: flex;
+    justify-content: center; /* Memusatkan elemen horizontal */
+    align-items: flex-end; /* Memusatkan elemen vertikal */  
+    overflow: hidden;
+}
+
+/* Gambar */
+.bottom-section img {
+    position: absolute;
+    width: 80%; /* Lebar gambar */
+    z-index: 2; /* Di atas backlight */
+}
+
+/* Lingkaran backlight */
+.backlight {
+    position: absolute;
+    width: 1000px; /* Lebar lingkaran */
+    height: 1000px; /* Tinggi lingkaran */
+    background: white; /* Warna lingkaran */
+    border-radius: 50%; /* Membuat lingkaran penuh */
+    z-index: 1; /* Di bawah gambar */
+    transform: translateY(50%);
+}
+
+/* Tombol Play/Pause */
+#musicButton {
+    position: absolute;
+    z-index: 999; /* Pastikan di atas semua elemen lainnya */
+    padding: 10px 20px;
+    background-color: #8b4829f5; /* Warna tombol */
+    color: white;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translate(-50%, 0); /* Memastikan tombol di tengah */
+    bottom: 10%; /* Jarak dari bawah */
+    left: 50%; /* Tengah horizontal */
+    font-size: 1.2rem;
+    font-family: Megrim, Roboto;
+    font-weight: bolder;
+}
+
+#musicbutton:hover {
+    background-color: #700d0d; /* Warna saat tombol dihover */
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* PROJECT */
+
+#project{
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+#project .judul {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    width: auto; /* Agar tidak terbatas lebar */
+    height: auto; /* Tinggi otomatis */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+#project .judul h1 {
+    writing-mode: vertical-rl; /* Menjadikan teks vertikal dari kanan ke kiri */
+    text-orientation: upright; /* Pastikan huruf tetap tegak */
+    font-size: 4rem; /* Pastikan ukuran besar */
+}
+
+
+#project .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+    gap: 3rem;
+    padding: 0 3rem 0 5rem;
+    width: 100%;
+}
+
+#project .card {
+    position: relative;
+    background-color: #49744c;
+    border-radius: 2rem;
+    box-shadow:rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    height: 270px;
+    border: 0.3rem solid white;
+}
+
+.card img{
+    width: 100%;
+    transition: .5s ease;
+    opacity:1;
+}
+
+.card:hover img{
+    transform: scale(2);
+}
+
+.card .layer {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+    padding: 2rem;
+}
+
+#project .card:hover .layer ,.card:active .layer{
+    transform: translateY(0);
+}
+
+
+.layer h2{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.layer a{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #1f1b1b;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.layer a:hover {
+    background-color: white;
+    color:#1f1b1b;
+}
+
+.content {
+    width: 1200px;
+    height: 700px;
+    display: none;
+    background-color: white;
+    z-index: 98;
+
+}
+
+.hide {
+    display: none !important;
+}
+
+.show{
+    display: block ;
+}
+
+
+/* content */
+.content{
+    background-color: #1a16168f;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+/* Tombol Kembali */
+.tombol-kembali {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.tombol-kembali a {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-left: 0.5rem; /* Jarak antara ikon dan teks */
+    text-decoration: none;
+
+}
+
+.tombol-kembali i {
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+#project .content-judul{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+/* Konten Utama */
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolom: 1fr 1fr */
+    gap: 2rem; /* Jarak antar elemen */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* Bagian Kiri */
+.content-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom dengan ukuran yang sama */
+    gap: 1rem; /* Jarak antar card */
+    padding: 1rem;
+}
+
+.content-left h2 {
+    grid-column: span 2; /* Membuat judul "Sultan" meluas di 2 kolom */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content-card {
+    background-color: #f4f4f4; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 2px solid white;
+}
+
+.content-card img {
+    width: 100%; /* Gambar menyesuaikan ukuran container */
+    height: auto; 
+    display: block; 
+}
+
+/* Bagian Kanan */
+.content-right {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-right p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.content-tools{
+    font-size: 3rem;
+}
+
+/* about section */
+
+#about,#contact {
+    margin-left: 10rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.grid-2{
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+    /* padding: 10rem; */
+    z-index: 99;
+    height: 80%;
+}
+
+.about-right{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    background-color: #1a1616;
+    margin-right: 5rem;
+
+}
+
+.about-left{
+    justify-content: center; 
+    align-items: center; 
+
+    background-color: #1a16165d;
+    color: white; 
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 6rem;
+}
+
+.about-left h2, .about-left h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about-left p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+
+}
+.about-left .skill-logo{
+font-size: 3rem;
+}
+.skill-logo img {
+    background: transparent;
+}
+.about-right img{
+    transform: scale(1.4);
+    transform: translateY(-5rem);
+}
+
+#contact {
+    margin-left: 10rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.contact-content{
+    background-color: #1a1616a8;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+
+    z-index: 99;
+    color: white;
+}
+
+.contact-content h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.contact-content p, .contact-content a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-content i{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.contact-content i:hover{
+color:#700d0d ;
+}
+
+

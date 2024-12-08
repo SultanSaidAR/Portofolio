@@ -1,0 +1,379 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- particle -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style/styles.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <!-- navbar -->
+    <div class="background"></div>
+    <!-- main contain -->
+    <div class="container">
+        <div class="navbar">
+        <nav><ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul></nav>
+    </div>
+
+        <!-- hero -->
+        <section id="hero">
+            <div class="top-section">
+                <div class="tagline">
+                    <h1>Sultan Said Abdul Rahim</h1>
+                    <p class="job"></p>
+                </div>
+            </div>
+            <div class="bottom-section">
+                    <img src="images/nobg.png" alt="">
+                    <div class="backlight"></div>
+                
+            </div>
+            <button id="musicButton">MUSIC</button>
+            <audio id="audioPlayer" loop>
+                <source src="musik/get-up.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+        
+            
+            
+        <!-- about -->
+        <section id="about">
+        <div class="grid-2">
+            
+            <div class="about-left">
+                <h2>My Profile</h2>
+                <p>Hi, I’m Sultan Said Abdul Rahim, a 3rd-year Information Systems student at Tarumanagara University with a deep passion for technology. I have a particular interest in data analysis and web development, where I strive to turn data into meaningful insights and create user-friendly web solutions.With hands-on experience in HTML, CSS, and PHP, I have built functional websites and dashboards tailored to support data analytics. From structuring clean, responsive web interfaces to crafting data-driven dashboards, I enjoy combining logic with creativity to deliver impactful results.
+                    Driven by a desire to keep learning and growing, I’m excited to take my skills to the next level as a Data Analyst and Web Developer in a professional environment. I believe that every project is an opportunity to improve, innovate, and make a positive impact through technology.
+                    Let’s connect and create something great together!</p>
+                <br>
+                <h3>Skills</h3>
+                <div class="skill-logo">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-solid fa-database"></i>
+                </div>
+            </div>
+            <div class="about-right">
+                <img src="./images/pasfoto.png" alt="Foto Muka">
+            </div>
+        </div>
+
+        </section>
+
+        
+        <!-- project -->
+        <section id="project">
+                
+                
+                <div class="content" id="content1">
+                    <div class="tombol-kembali"><i class="fa-solid fa-backward back"></i> <a class="back">Back</a></div>
+                    <div class="content-judul"><h1>PORTOFOLIO</h1></div>
+                    <div class="grid-content">
+                        <div class="content-left">
+                            
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="content-right">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptate, ipsam saepe tempore, mollitia asperiores illo nostrum beatae dignissimos ducimus aliquam quae debitis quis iure, unde facere nobis ratione quas blanditiis autem temporibus numquam molestias maiores? Nam perferendis voluptatem consequuntur distinctio nisi quisquam deserunt tempora cupiditate harum placeat, ex minima!</p>
+                            <br>
+                            <h3>Tools</h3>
+                            <br>
+                            <div class="content-tools">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css"></i>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="content2">
+                    <div class="tombol-kembali"><i class="fa-solid fa-backward back"></i> <a class="back">Back</a></div>
+                    <div class="content-judul"><h1>WEB SHOP</h1></div>
+                    <div class="grid-content">
+                        <div class="content-left">
+                            
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="content-right">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptate, ipsam saepe tempore, mollitia asperiores illo nostrum beatae dignissimos ducimus aliquam quae debitis quis iure, unde facere nobis ratione quas blanditiis autem temporibus numquam molestias maiores? Nam perferendis voluptatem consequuntur distinctio nisi quisquam deserunt tempora cupiditate harum placeat, ex minima!</p>
+                            <br>
+                            <h3>Tools</h3>
+                            <br>
+                            <div class="content-tools">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css"></i>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div><div class="content" id="content3">
+                    <div class="tombol-kembali"><i class="fa-solid fa-backward back"></i> <a class="back">Back</a></div>
+                    <div class="content-judul"><h1>DATA ANALYSIS</h1></div>
+                    <div class="grid-content">
+                        <div class="content-left">
+                            
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="content-right">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptate, ipsam saepe tempore, mollitia asperiores illo nostrum beatae dignissimos ducimus aliquam quae debitis quis iure, unde facere nobis ratione quas blanditiis autem temporibus numquam molestias maiores? Nam perferendis voluptatem consequuntur distinctio nisi quisquam deserunt tempora cupiditate harum placeat, ex minima!</p>
+                            <br>
+                            <h3>Tools</h3>
+                            <br>
+                            <div class="content-tools">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css"></i>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div><div class="content" id="content4">
+                    <div class="tombol-kembali"><i class="fa-solid fa-backward back"></i> <a class="back">Back</a></div>
+                    <div class="content-judul"><h1>Dashbord</h1></div>
+                    <div class="grid-content">
+                        <div class="content-left">
+                            
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="content-right">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptate, ipsam saepe tempore, mollitia asperiores illo nostrum beatae dignissimos ducimus aliquam quae debitis quis iure, unde facere nobis ratione quas blanditiis autem temporibus numquam molestias maiores? Nam perferendis voluptatem consequuntur distinctio nisi quisquam deserunt tempora cupiditate harum placeat, ex minima!</p>
+                            <br>
+                            <h3>Tools</h3>
+                            <br>
+                            <div class="content-tools">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css"></i>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div><div class="content" id="content5">
+                    <div class="tombol-kembali"><i class="fa-solid fa-backward back"></i> <a class="back">Back</a></div>
+                    <div class="content-judul"><h1>TRAVEL SITE</h1></div>
+                    <div class="grid-content">
+                        <div class="content-left">
+                            
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="content-right">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptate, ipsam saepe tempore, mollitia asperiores illo nostrum beatae dignissimos ducimus aliquam quae debitis quis iure, unde facere nobis ratione quas blanditiis autem temporibus numquam molestias maiores? Nam perferendis voluptatem consequuntur distinctio nisi quisquam deserunt tempora cupiditate harum placeat, ex minima!</p>
+                            <br>
+                            <h3>Tools</h3>
+                            <br>
+                            <div class="content-tools">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css"></i>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div><div class="content" id="content6">
+                    <div class="tombol-kembali"><i class="fa-solid fa-backward back"></i> <a class="back">Back</a></div>
+                    <div class="content-judul"><h1>MOVIE THEATER</h1></div>
+                    <div class="grid-content">
+                        <div class="content-left">
+                            
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+                            <div class="content-card">
+                                <img src="./images/portofolio.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="content-right">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptate, ipsam saepe tempore, mollitia asperiores illo nostrum beatae dignissimos ducimus aliquam quae debitis quis iure, unde facere nobis ratione quas blanditiis autem temporibus numquam molestias maiores? Nam perferendis voluptatem consequuntur distinctio nisi quisquam deserunt tempora cupiditate harum placeat, ex minima!</p>
+                            <br>
+                            <h3>Tools</h3>
+                            <br>
+                            <div class="content-tools">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css"></i>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+               
+
+                  
+            <div class="grid-container">
+                
+                <div class="card card1">
+                    <img src="./images/portofolio.png" alt="GAMBAR WEB">
+                    <div class="layer">
+                        <h2>Portofolio</h2>
+                        <a id="view1">View More</a>
+                        <!-- <button id="view1"><a href="">View More</a></button> -->
+                    </div>
+                    
+                </div>
+                <div class="card card2">
+                    <img src="./images/portofolio.png" alt="GAMBAR WEB">
+                    <div class="layer">
+                        <h2>Web Shop</h2>
+                        <a id="view2">View More</a>
+                    </div>
+                    
+                </div>
+                <div class="card card3">
+                    <img src="./images/portofolio.png" alt="GAMBAR WEB">
+                    <div class="layer">
+                        <h2>Data analysis</h2>
+                        <a id="view3">View More</a>
+                    </div>
+                    
+                </div>
+                <div class="card card4">
+                    <img src="./images/portofolio.png" alt="GAMBAR WEB">
+                    <div class="layer">
+                        <h2>Dashbord</h2>
+                        <a id="view4">View More</a>
+                    </div>
+                    
+                </div>
+                <div class="card card5">
+                    <img src="./images/portofolio.png" alt="GAMBAR WEB">
+                    <div class="layer">
+                        <h2>Travel Site</h2>
+                        <a id="view5">View More</a>
+                    </div>
+                    
+                </div>
+                <div class="card card6">
+                    <img src="./images/portofolio.png" alt="GAMBAR WEB">
+                    <div class="layer">
+                        <h2>Movie Theatre</h2>
+                        <a id="view6">View More</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="judul"><h1>My Project</h1></div>
+        </section>
+
+
+        <!-- contact -->
+        <section id="contact">
+            <div class="contact-content">
+                <h2>Get In Touch</h2>
+                <p>if u want to make a chat with me feel free to contact in any of my social media</p>
+                <a>Email : sultansaidabdulrahim@gmail.com</a>
+                <div class="socialmedia">
+                    <a href="https://www.youtube.com/watch?v=7nJN12cHyv8"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-line"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <br>
+                <p style="font-size: 1rem;">&copy; 2024 Portofolio Sultan Said
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
